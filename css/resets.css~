@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#starship_canvas {
+    position: absolute;
+    background-color: #050505;
+}
+
+.image {
+    display: none;
+}
