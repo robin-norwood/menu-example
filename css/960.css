@@ -6,11 +6,16 @@
         Licensed under GPL and MIT.
 */
 
+body {
+  min-width: 960px;
+}
 
 /* Containers
 ----------------------------------------------------------------------------------------------------*/
 .container_16 {
         width: 92%;
+        min-width: 960px;
+        max-width: 1900px;
         margin-left: 4%;
         margin-right: 4%;
 }

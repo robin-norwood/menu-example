@@ -20,7 +20,7 @@
 */
 
 $(function () {
-    var Menu = function () {
+    var Menu = function (default_path) {
         var self = this;
 
         var init = function () {
@@ -41,7 +41,7 @@ $(function () {
         };
 
         this.setAnchor = function (anchor_tag) {
-            anchor_tag = anchor_tag ? anchor_tag : 'one';
+            anchor_tag = anchor_tag ? anchor_tag : default_path;
             anchor_tag = anchor_tag.split('#').reverse()[0];
             this.anchor = new Anchor(anchor_tag);
 
@@ -61,6 +61,6 @@ $(function () {
         init();
     };
 
-    var menu = new Menu();
+    var menu = new Menu("one");
 }
 );
